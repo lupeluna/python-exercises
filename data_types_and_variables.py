@@ -33,6 +33,32 @@ print("This week you will recieve", total_pay, "dollars.")
 # A student can be enrolled to a class only if the class is not full and the 
 #class schedule does not conflict with her current schedule.
 
+enroll = class_not_full and no_conflict
+
+# A product offer can be applied only if people buys more than 2 items,
+# and the offer has not expired.  Premium members do not need to buy a specific amt.
+
+Offer_expired = False
+More_than_2_items = True
+Premium_members = True
+
+offer_applied = Premium_members or (More_than_2_items and not Offer_expired)
+
+print (offer_applied)
+
+
+#Use the following code to follow the instructions below:
+
+username = 'codeup'
+password = 'notastrongpassword'
+
+len(password) >= 5
+len(username) <= 20
+password != username
+
+#bonus
+
+
 
 
 
