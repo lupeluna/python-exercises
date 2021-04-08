@@ -33,7 +33,13 @@ print("This week you will recieve", total_pay, "dollars.")
 # A student can be enrolled to a class only if the class is not full and the 
 #class schedule does not conflict with her current schedule.
 
-enroll = class_not_full and no_conflict
+class_full = False
+schedule_conflict = False
+enrollable = not (class_full or schedule_conflict)
+
+enrollable
+
+
 
 # A product offer can be applied only if people buys more than 2 items,
 # and the offer has not expired.  Premium members do not need to buy a specific amt.
