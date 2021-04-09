@@ -72,7 +72,7 @@ while i <= 5:
 
 # 2b. For Loops
 
-num = input("Please input a positive integer")
+num = int(input("Please input a positive integer"))
 
 for n in range(1, 11):
     print(f'{num} x {n} = {num * n}')
@@ -168,7 +168,7 @@ proceed = input('Do you want to continue and print a table of powers? :')
 if proceed.lower().startswith('y'):
     posited_num = int(posited_num)
     print()
-    print('number | squred | cubed')
+    print('number | squared | cubed')
     print('------' | '-------' | '--------')
     for i in range(1, posited_num + 1):
         i_squared - i ** 2
