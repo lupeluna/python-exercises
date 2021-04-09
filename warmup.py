@@ -30,8 +30,6 @@ print(truck)
 # vehicle, as above Write the code that operates on that list of 
 # dictionaries in order to uppercase the entire make and model values.
 
-def dict(car1, car2, car3):
-    return car1.title, car2.title, car3.title
 
     trucks = [
         {
