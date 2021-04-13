@@ -121,7 +121,9 @@ students = [
 
 student_count = len(students)
 print(f"There are {student_count} students")
+
 # There are 14 Students
+
 
 # 2. How many students prefer light coffee? For each type of coffee roast?
 
@@ -251,9 +253,7 @@ for student in students:
             number_ds_pets += 1
 print('The average pet age for students in Data Sceince is', total_ds_pet_age / number_ds_pets)
         
-
 # The average pet age for students in Data Sceince is 5.444444444444445
-
 
 
 # 10. What is most frequent coffee preference for data science students?
@@ -297,11 +297,11 @@ for student in students:
             
 coffee_choices = dict(light = light, medium = medium, dark = dark)
         
-coffee_preference = max(coffee_choices, key=coffee_choices.get)
+coffee_preference = min(coffee_choices, key=coffee_choices.get)
 
-print('The most frequent coffee preference for web development students is', coffee_preference)
+print('The least frequent coffee preference for web development students is', coffee_preference)
 
-# The most frequent coffee preference for web development students is light
+# The least frequent coffee preference for web development students is light
 
 
 
@@ -437,3 +437,4 @@ for student in students:
 print(f'The highest pet age for light coffee drinkers is {highest_pet_age}')
 
 #  The highest pet age for light coffee drinkers is 8
+
