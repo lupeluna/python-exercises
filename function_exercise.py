@@ -107,10 +107,32 @@ print(remove_vowel('castle'))
 def normalize_name(string_in):
     string_out = ''
     for char in string_in:
-        if char.isalpha() or char == ' ':
+        if char.isalnum() or char == ' ':
             string_out += char
     string_out = string_out.strip()
     string_out = string_out.replace(' ', '_')
     string_out = string_out.lower()
+    while string_out[0].isdigit() and string_out[0] != "_":
+        string_out = string_out[1:]
     return string_out
 print(normalize_name(' 458  HeLlo AlEx $#8$95'))
+
+ 
+
+
+
+# 11. Write a function named cumulative_sum that accepts a list of 
+# numbers and returns a list that is the cumulative sum of the numbers 
+# in the list.
+
+def cumulative_sum(list_of_numbers):
+    output = [] #initialize empty list for output to append to
+    for index in range (0, (len(list_of_numbers))): #provides range of index 0 to the length of the string
+        new_value = 0
+        if index == 0:
+            new_value = list_of_numbers[index]  # if the list only contains one value, the sum is the value itself
+        else: 
+            new_value = list_of_numbers[index] + output[index-1] #index -1 adds the last number returned in the output
+        output.append(new_value)
+    return output
+assert cumulative_sum([1,2,3]) == [1,3,6]
